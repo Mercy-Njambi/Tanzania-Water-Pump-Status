@@ -23,3 +23,11 @@ A baseline model was created using Decision Trees. Random Forest, Adaboost and X
 
 ### Evaluation
 The evaluation metric used was accuracy score and balanced accuracy score.
+
+## Repository Guide
+- The raw data used for the project can be found [here](https://github.com/Mercy-Njambi/Tanzania-Water-Pump-Status/tree/main/Data/Raw)
+- The cleaned data can be found [here]()
+- The images from EDA can be found [here]()
+- The notebook that contains the project can be found [here](https://github.com/Mercy-Njambi/Tanzania-Water-Pump-Status/blob/main/Tanzania%20Water%20Pump%20Status%20Modelling.ipynb)
+- The presentation for this project can be found [here]()
+
