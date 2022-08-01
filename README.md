@@ -19,10 +19,24 @@ The dataset used for this anaysis was downloaded from [DrivenData](https://www.d
 Before modelling could be done, the data was firts cleaned and preprocessed. The data was checked for null values and also duplicates. This data had a lot of columns that had similar information, meaning some had to be dropped. Some Exploratory Data Analysis(EDA) was done to the data to determine if there was any patterns in the data. This data had a lot of categorical columns, meaning that these columns had to be converted to numeric features in order to be used in modelling. The categorical columns were one hot encoded, and the numeric columns were scaled due to the huge difference in magnitude in the data. This data was then ready for modelling.
 
 ### Modelling
-A baseline model was created using Decision Trees. Random Forest, Adaboost and XGBoost models were also used.
+The data was split into training and test, where training was used to fit the models, while test data was used to assess the models. A baseline model was created using Decision Trees. Random Forest and K-Nearest Neighbor were also used. GridSearchCV was used first, but was computationally expensive, hence RandomizedSearchCV was used for the rest of the iterations.
 
 ### Evaluation
-The evaluation metric used was accuracy score and balanced accuracy score.
+The evaluation metric used was accuracy score . The model had a a training score of 0.88 and a testing score of 0.8. This model performed the best, hence why it was picked as the final model. It also had an overall accuracy of 0.8, which means that the model is able to correctly classify 80% of the features. This model had the following features as the most important:
+![image](https://user-images.githubusercontent.com/58382818/182107223-6f9c5353-37aa-4744-99be-5ffee4778dba.png)
+
+## Conclusions
+- The final random forest classifier is suitable for this business case, and is ready for deployment.
+- Location is a crucial factor in predicting the status of the water point.
+- Water points with enough water are at a higher chance to fail, and should be closely monitored.
+- Water points with high population tend to wear out quickly, hence, higher chances of the wells needing repair, or them not functioning.
+- Places with low GPS values have higher chances of having water points that need repair or that don't function
+
+## Recommendations
+- Water points that are in close proximity to those that need repairs or are non-functional should be accessed frequently since they are most likey to also suffer the fate of needing repair or becoming non-functional.
+- Water points with enough water should be closely monitored, as the high use could lead to their failure.
+- Water points with high use population should be closely monitored.
+- Low lying areas need to be have the water points checked more often to avoid them failing and needing repair
 
 ## Repository Guide
 - The raw data used for the project can be found [here](https://github.com/Mercy-Njambi/Tanzania-Water-Pump-Status/tree/main/Data/Raw)
