@@ -40,8 +40,8 @@ The evaluation metric used was accuracy score . The model had a a training score
 
 ## Repository Guide
 - The raw data used for the project can be found [here](https://github.com/Mercy-Njambi/Tanzania-Water-Pump-Status/tree/main/Data/Raw)
-- The cleaned data can be found [here]()
-- The images from EDA can be found [here]()
+- The cleaned data can be found [here](https://github.com/Mercy-Njambi/Tanzania-Water-Pump-Status/tree/main/Data/Processed)
+- The images from EDA can be found [here](https://github.com/Mercy-Njambi/Tanzania-Water-Pump-Status/tree/main/Images)
 - The notebook that contains the project can be found [here](https://github.com/Mercy-Njambi/Tanzania-Water-Pump-Status/blob/main/Tanzania%20Water%20Pump%20Status%20Modelling.ipynb)
-- The presentation for this project can be found [here]()
+- The presentation for this project can be found [here](https://github.com/Mercy-Njambi/Tanzania-Water-Pump-Status/blob/main/Tanzania%20Water%20Points%20Status%20Modelling%20Presentation.pdf)
 
